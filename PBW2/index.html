@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Akademik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pendaftaran">Pendaftaran</a></li>
+            <li><a href="#nilai">Nilai Mahasiswa</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Selamat Datang di Sistem Akademik</h1>
+            <p>Silahkan pilih menu di atas atau gulir kebawah untuk mengakses fitur yang tersedia.</p>
+        </section>
+
+        <section id="pendaftaran">
+            <h1>Pendaftaran Mahasiswa Baru</h1>
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+                    <input type="text" id="npm" name="npm" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" name="alamat" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="laki" name="gender" value="laki-laki">
+                        <label for="laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="gender" value="perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="prodi">Program Studi</label>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">Pilih Program Studi</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                        <option value="tk">Teknik Komputer</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Tambah</button>
+            </form>
+        </section>
+
+        <section id="nilai">
+            <h1>Tabel Nilai Mahasiswa</h1>
+            <div class="table-container">
+                <table class="grades-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">NPM</th>
+                            <th rowspan="2">Nama Lengkap</th>
+                            <th colspan="10">Absen</th>
+                            <th colspan="10">Tugas</th>
+                            <th rowspan="2">UTS</th>
+                            <th rowspan="2">UAS</th>
+                        </tr>
+                        <tr>
+                            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                            <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>192061001</td>
+                            <td>Rina Kumala Sari</td>
+                            <td>H</td><td>H</td><td>H</td><td>H</td><td>H</td>
+                            <td>H</td><td>H</td><td>H</td><td>H</td><td>H</td>
+                            <td>90</td><td>85</td><td>70</td><td>95</td><td>88</td>
+                            <td>76</td><td>95</td><td>97</td><td>80</td><td>88</td>
+                            <td>85</td><td>90</td>
+                        </tr>
+                        <tr>
+                            <td>192061002</td>
+                            <td>Kevin Mulyana</td>
+                            <td>H</td><td>A</td><td>H</td><td>H</td><td>H</td>
+                            <td>A</td><td>A</td><td>H</td><td>H</td><td>H</td>
+                            <td>80</td><td>95</td><td>90</td><td>85</td><td>98</td>
+                            <td>96</td><td>75</td><td>87</td><td>70</td><td>78</td>
+                            <td>95</td><td>90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="galeri">
+            <h1>Galeri Kampus</h1>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/campus1.jpg" alt="Gedung Kampus">
+                    <div class="caption">Gedung Utama Kampus</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/campus2.jpg" alt="Laboratorium Kampus">
+                    <div class="caption">Laboratorium Bersama</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
